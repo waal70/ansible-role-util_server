@@ -22,7 +22,8 @@ in the templates folder of this role
 Role Variables
 --------------
 
-Maximum age of the netboot image. If the currently installed netboot image is older than this, it will re-download
+Maximum age of the netboot image. If the currently installed netboot image is older than this, it will re-download  
+
     netboot_max_age: "98d"  
     netboot_url: ["https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/netboot.tar.gz"]  
 
