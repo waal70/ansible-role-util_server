@@ -24,7 +24,7 @@ Role Variables
 
 Maximum age of the netboot image. If the currently installed netboot image is older than this, it will re-download
     netboot_max_age: "98d"
-    netboot_url: "https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/netboot.tar.gz"
+    netboot_url: ["https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/current/images/netboot/netboot.tar.gz"]
 
     install_pihole: false # switch to (re-)install pihole
 
@@ -57,7 +57,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - waal70.util_server
+         - waal70.util_serverS
 
 License
 -------
