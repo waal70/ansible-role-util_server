@@ -39,10 +39,19 @@
 # In pi-hole web interface, this is known as the 'local DNS'
 # As this may contain sensitive info, the src is the private repository
 # You can include a custom.list in ./files as well, just put custom.list in the src: parameter
+# Remember to export PRIVATE_REPO!
+
+- name: Assert existence of PRIVATE_REPO environment variable
+  ansible.builtin.assert:
+    that:
+      - lookup('ansible.builtin.env', 'PRIVATE_REPO') | length > 0
+    fail_msg: "You have not set PRIVATE_REPO. Default will be '~' (user's home)"
+    success_msg: "Correctly set PRIVATE_REPO"
+
 - name: Place the file with custom DNS entries into pihole configuration folder
   ansible.builtin.copy:
     dest: /etc/pihole/custom.list
-    src: "~/ansible/home/inventory/client.list"
+    src: "{{ lookup('ansible.builtin.env', 'PRIVATE_REPO', default='~') }}/inventory/client.list"
     mode: "0644"
     owner: pihole
     group: pihole
