@@ -25,5 +25,14 @@
         "date_added": 1724336724,
         "date_modified": 1724336741,
         "comment": "Ansible pre-configured - INSTA"
+    },
+    {
+        "id": 96,
+        "type": 2,
+        "domain": "(\\.|^)opensubtitles\\.org$",
+        "enabled": 1,
+        "date_added": 1730590670,
+        "date_modified": 1730590670,
+        "comment": "Ansible pre-configured - PLEX"
     }
 ]
