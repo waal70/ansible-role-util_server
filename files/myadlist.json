@@ -430,5 +430,53 @@
         "number": 0,
         "invalid_domains": 0,
         "status": 1
+    },
+    {
+        "id": 106,
+        "address": "https:\/\/raw.githubusercontent.com\/hagezi\/dns-blocklists\/main\/adblock\/fake.txt",
+        "enabled": 1,
+        "date_added": 1735479783,
+        "date_modified": 1735479783,
+        "comment": "Ansible pre-configured",
+        "date_updated": 1735480024,
+        "number": 0,
+        "invalid_domains": 0,
+        "status": 2
+    },
+    {
+        "id": 107,
+        "address": "https:\/\/raw.githubusercontent.com\/hagezi\/dns-blocklists\/main\/adblock\/pro.txt",
+        "enabled": 1,
+        "date_added": 1735479783,
+        "date_modified": 1735479783,
+        "comment": "Ansible pre-configured",
+        "date_updated": 1735480025,
+        "number": 0,
+        "invalid_domains": 0,
+        "status": 2
+    },
+    {
+        "id": 108,
+        "address": "https:\/\/raw.githubusercontent.com\/hagezi\/dns-blocklists\/main\/adblock\/tif.txt",
+        "enabled": 1,
+        "date_added": 1735479783,
+        "date_modified": 1735479783,
+        "comment": "Ansible pre-configured",
+        "date_updated": 1735480031,
+        "number": 0,
+        "invalid_domains": 0,
+        "status": 2
+    },
+    {
+        "id": 109,
+        "address": "https:\/\/raw.githubusercontent.com\/hagezi\/dns-blocklists\/main\/adblock\/hoster.txt",
+        "enabled": 1,
+        "date_added": 1735479783,
+        "date_modified": 1735479783,
+        "comment": "Ansible pre-configured",
+        "date_updated": 1735480032,
+        "number": 0,
+        "invalid_domains": 0,
+        "status": 2
     }
 ]
