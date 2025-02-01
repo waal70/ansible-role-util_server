@@ -1,6 +1,6 @@
 galaxy_info:
   author: waal70 (Andre)
-  description: Role to configure an instance to handle tftp, pi-hole
+  description: Role to configure an instance to handle tftp
   company: waal70
   platforms:
     - name: Debian
@@ -12,8 +12,7 @@ galaxy_info:
   min_ansible_version: "2.1"
 
   galaxy_tags: [debian,
-                tftp,
-                pihole
+                tftp
   ]
 
 dependencies: []
